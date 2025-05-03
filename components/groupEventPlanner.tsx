@@ -8,7 +8,6 @@ import {
   Calendar as CalendarIconLucide, // Renamed to avoid conflict with potential Calendar component
   Plus,
   X,
-  Users,
   Clock,
   MapPin,
   Check,
