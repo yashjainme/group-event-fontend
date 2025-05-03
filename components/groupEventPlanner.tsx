@@ -299,7 +299,8 @@ export default function GroupEventPlanner() {
       </AnimatePresence>
 
       {/* Navbar */}
-      <header className="sticky top-0 z-30 w-full bg-white/80 backdrop-blur-lg border-b border-gray-200/70 shadow-sm">
+       {/* Navbar */}
+       <header className="sticky top-0 z-30 w-full bg-white/80 backdrop-blur-lg border-b border-gray-200/70 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo/Brand */}
@@ -321,7 +322,7 @@ export default function GroupEventPlanner() {
                 className="flex items-center px-3 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg shadow hover:shadow-md transition duration-200 ease-in-out text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 <Plus className="h-4 w-4 mr-1.5" />
-                New Event
+                <span className="hidden sm:inline">New Event</span> {/* Hide text on small screens */}
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.1 }}
@@ -986,7 +987,7 @@ function SettingsContent({ onClose }: SettingsContentProps) {
       {/* Modal Header */}
       <div className="flex justify-between items-center mb-5 pb-3 border-b border-gray-200">
         <h3 className="text-lg font-semibold text-gray-900">
-          Application Settings
+          Create New Event
         </h3>
         <motion.button
           whileHover={{ scale: 1.1, rotate: 90 }}
